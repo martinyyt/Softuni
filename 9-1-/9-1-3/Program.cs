@@ -11,7 +11,7 @@ namespace _9_1_3
         static void Main(string[] args)
         {
 
-            //6666666666
+            var startNumb=
 
 
         }
