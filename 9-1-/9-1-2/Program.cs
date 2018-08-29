@@ -10,8 +10,9 @@ namespace _9_1_2
     {
         static void Main(string[] args)
         {
-            
-            //dali 1
+
+            //hmgvmv
+
         }
     }
 }
