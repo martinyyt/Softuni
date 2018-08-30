@@ -10,6 +10,7 @@ namespace _9_2_2
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
