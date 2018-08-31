@@ -45,57 +45,123 @@ namespace _9_2_3
                             var currentCows = 0;
                             var currentBulls = 0;
 
-                            if (n1Check==n1Work)
+                            if (n1Check == n1Work)
                             {
                                 currentBulls++;
                                 n1Check = -1;
                                 n1Work = -2;
                             }
-                            if (n2Check==n2Work)
+
+                            if (n2Check == n2Work)
                             {
                                 currentBulls++;
                                 n2Check = -3;
                                 n2Work = -4;
                             }
-                            if (n3Check==n3Work)
+
+                            if (n3Check == n3Work)
                             {
                                 currentBulls++;
                                 n3Check = -5;
                                 n3Work = -6;
                             }
-                            if (n4Check==n4Work)
+
+                            if (n4Check == n4Work)
                             {
                                 currentBulls++;
-                                n1Check = -7;
+                                n4Check = -7;
                                 n4Work = -8;
                             }//do tuk sa bikowete
-                            if (n2Check == n1Work)
-                            {
-                                currentCows++;
-                                n2Check = -3;
-                                n1Work = -4;
-                            }
-                            else if (n2Check == n2Work)
-                            {
-                                currentBulls++;
-                                n2Check = -3;
-                                n2Work = -4;
-                            }
-                            else if (n1Check == n3Work)
+
+                            if (n1Check == n2Work && n1Check > 0)
                             {
                                 currentCows++;
                                 n1Check = -1;
-                                n3Work = -2;
+                                n2Work = -1;
                             }
-                            else if (n1Check == n4Work)
+                            else if (n1Check == n3Work && n1Check > 0)
                             {
                                 currentCows++;
                                 n1Check = -1;
-                                n4Work = -2;
+                                n3Work = -1;
+                            }
+                            else if (n1Check == n4Work && n1Check > 0)
+                            {
+                                currentCows++;
+                                n1Check = -1;
+                                n4Work = -1;
+                            } //kraj s n1
+
+                            if (n2Check == n1Work && n2Check > 0)
+                            {
+                                currentCows++;
+                                n2Check = -1;
+                                n1Work = -1;
+                            }
+                            else if (n2Check == n3Work && n2Check > 0)
+                            {
+                                currentCows++;
+                                n2Check = -1;
+                                n3Work = -1;
+                            }
+                            else if (n2Check == n4Work && n2Check > 0)
+                            {
+                                currentCows++;
+                                n2Check = -1;
+                                n4Work = -1;
+                            }                           
+
+                            if (n3Check == n1Work && n3Check > 0)
+                            {
+                                currentCows++;
+                                n3Check = -1;
+                                n1Work = -1;
+                            }
+                            else if (n3Check == n2Work && n3Check > 0)
+                            {
+                                currentCows++;
+                                n3Check = -1;
+                                n2Work = -1;
+                            }
+                            else if (n3Check == n4Work && n3Check > 0)
+                            {
+                                currentCows++;
+                                n3Check = -1;
+                                n4Work = -1;
+                            }
+
+                            if (n4Check == n1Work && n4Check > 0)
+                            {
+                                currentCows++;
+                                n4Check = -1;
+                                n1Work = -1;
+                            }
+                            else if (n4Check == n2Work && n4Check > 0)
+                            {
+                                currentCows++;
+                                n4Check = -1;
+                                n2Work = -1;
+                            }
+                            else if (n4Check == n3Work && n4Check > 0)
+                            {
+                                currentCows++;
+                                n4Check = -1;
+                                n3Work = -1;
+                            }
+
+                            if (currentBulls==bullsCount&&currentCows==cowsCount)
+                            {
+                                Console.Write("{0}{1}{2}{3} ",i1,i2,i3,i4);
+                                counter++;
                             }
                         }
                     }
                 }
+            }
+
+            if (counter==0)
+            {
+                Console.WriteLine("No");
             }
         }
     }
