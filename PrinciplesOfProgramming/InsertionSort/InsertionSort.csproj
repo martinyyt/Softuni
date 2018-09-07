@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C3CA5CD7-BC78-4581-A6AF-D0E7C22806F2}</ProjectGuid>
+    <ProjectGuid>{923D518C-2210-4EDC-92D8-9F378D29FD10}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SpiralNM</RootNamespace>
-    <AssemblyName>SpiralNM</AssemblyName>
+    <RootNamespace>InsertionSort</RootNamespace>
+    <AssemblyName>InsertionSort</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SpiralNM.cs" />
+    <Compile Include="InsertionSort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

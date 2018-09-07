@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C3CA5CD7-BC78-4581-A6AF-D0E7C22806F2}</ProjectGuid>
+    <ProjectGuid>{50934113-1A73-4158-9402-29B10CFA0C03}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SpiralNM</RootNamespace>
-    <AssemblyName>SpiralNM</AssemblyName>
+    <RootNamespace>MaxConsecutiveSum</RootNamespace>
+    <AssemblyName>MaxConsecutiveSum</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SpiralNM.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

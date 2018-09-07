@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C3CA5CD7-BC78-4581-A6AF-D0E7C22806F2}</ProjectGuid>
+    <ProjectGuid>{464A0ADE-1E1D-468C-B216-F4B90737C9D6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SpiralNM</RootNamespace>
-    <AssemblyName>SpiralNM</AssemblyName>
+    <RootNamespace>_1_Methods</RootNamespace>
+    <AssemblyName>1-Methods</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,17 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SpiralNM.cs" />
+    <Compile Include="Methods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\1-Methods\1-Methods.csproj">
-      <Project>{464a0ade-1e1d-468c-b216-f4b90737c9d6}</Project>
-      <Name>1-Methods</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

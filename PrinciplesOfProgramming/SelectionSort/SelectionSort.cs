@@ -8,6 +8,14 @@ namespace SelectionSort
 {
     class SelectionSort
     {
+        static void DisplayArray(int[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
+        }
+
         static void Main(string[] args)
         {
             int[] arrayToSort = { 5, 21, 5, 0, 7, 6, 8, 21, 99, 0, 5, 2, 7, 33 };
