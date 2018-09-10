@@ -10,56 +10,42 @@ namespace FindExactSumInArray
     class FindExactSumInArray
     {
 
-        static void FindRequiredSumSubArray(int[] arr, int sum)
+        static void Variations(int[] arr, int[] output, int numberOfElements, int target)
         {
-            //create an array for the subset with max length of input array  
-            int[] sub = new int[arr.Length];
-            int temp = 0;
+            int sum = 0;
+            if (numberOfElements == 0)
+            {
+                for (int i = 0; i < output.Length; i++)
+                {
+                    sum += output[i];
+                }
+                if (sum==target)
+                {
+                    Methods.DisplayArray(output);
+                    return;
+                }
+                return;
+            }
+
             for (int i = 0; i < arr.Length; i++)
             {
-                for (int j = i, col = 0; j < arr.Length; j++, col++)
-                {
-                    //add the value of input array one by one  
-                    temp += arr[j];
-                    sub[col] = arr[j];
-                    //if addition is equal to sum then print it  
-                    if (temp == sum)
-                    {
-                        int total = 0;
-                        for (int k = 0; k < sub.Length; k++)
-                        {
-                            total += sub[k];
-                            Console.Write(sub[k].ToString() + " ");
-
-                            //if total and sum are equal then leave the print  
-                            if (total == sum)
-                            {
-                                Console.Write("\n");
-                                break;
-                            }
-                        }
-                    }
-                    //if temp is greater than sum are equal then clear the sub array, set temp value and leave the loop for next  
-                    if (temp > sum)
-                    {
-                        Array.Clear(sub, 0, sub.Length);
-                        temp = 0;
-                        break;
-                    }
-                }
+                output[numberOfElements - 1] = arr[i];
+                Variations(arr, output, numberOfElements - 1,target);
             }
         }
 
         static void Main(string[] args)
         {
-            int[] arr = { 2, 1, 2, 4, 3, 18, 2, 6 };
+            int[] arr = { 2, 1, 2, 4, 3, 180, 2, 6 };
             var len = arr.Length;
-            var sum = int.Parse(Console.ReadLine());
+            var target = int.Parse(Console.ReadLine());
+            
 
-            Console.WriteLine("Output String is:");
-            FindRequiredSumSubArray(arr, sum);
-            Console.WriteLine();
-
+            for (int i = 1; i <= arr.Length; i++)
+            {
+                int[] sum = new int[i];
+                Variations(arr, sum, i,target);
+            }
 
         }
     }
