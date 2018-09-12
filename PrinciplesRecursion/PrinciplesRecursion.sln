@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationsOfArrayElements
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{6A75B68F-ECC3-4C61-A5E0-5FF704CF2F64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsetSumProblem-Why", "PossibleSum\SubsetSumProblem-Why.csproj", "{01401D71-417C-4ADE-A14D-3299668DDD5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6A75B68F-ECC3-4C61-A5E0-5FF704CF2F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A75B68F-ECC3-4C61-A5E0-5FF704CF2F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A75B68F-ECC3-4C61-A5E0-5FF704CF2F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01401D71-417C-4ADE-A14D-3299668DDD5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01401D71-417C-4ADE-A14D-3299668DDD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01401D71-417C-4ADE-A14D-3299668DDD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01401D71-417C-4ADE-A14D-3299668DDD5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
