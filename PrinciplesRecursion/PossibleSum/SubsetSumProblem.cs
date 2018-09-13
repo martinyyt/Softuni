@@ -26,7 +26,7 @@ namespace PossibleSum
                     if (i >= set[j - 1])
                         subset[i, j] = subset[i, j] ||
                                        subset[i - set[j - 1], j - 1];
-
+                    
                 }
             }
 
@@ -44,6 +44,7 @@ namespace PossibleSum
  
         public static void Main()
         {
+            
             int[] set = { 3, 34, 4, 12, 5, 1 };
             int sum = 14;
             int n = set.Length;
