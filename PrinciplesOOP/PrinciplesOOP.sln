@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-Test", "PrinciplesOOP\1-T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassworGenerator", "PassworGenerator\PassworGenerator.csproj", "{1B39A680-F95B-488B-9054-1CABD67E82E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsLeapYear", "IsLeapYear\IsLeapYear.csproj", "{EE67DCAC-B39C-4211-9364-DF14C268DBCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1B39A680-F95B-488B-9054-1CABD67E82E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B39A680-F95B-488B-9054-1CABD67E82E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B39A680-F95B-488B-9054-1CABD67E82E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE67DCAC-B39C-4211-9364-DF14C268DBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE67DCAC-B39C-4211-9364-DF14C268DBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE67DCAC-B39C-4211-9364-DF14C268DBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE67DCAC-B39C-4211-9364-DF14C268DBCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90473268-4F83-4AF5-8DDB-D33B4E4630D7}</ProjectGuid>
+    <ProjectGuid>{EE67DCAC-B39C-4211-9364-DF14C268DBCF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PrinciplesOOP</RootNamespace>
-    <AssemblyName>PrinciplesOOP</AssemblyName>
+    <RootNamespace>IsLeapYear</RootNamespace>
+    <AssemblyName>IsLeapYear</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="namespace12\Class1.cs" />
-    <Compile Include="Test.cs" />
+    <Compile Include="IsLeapYear.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
