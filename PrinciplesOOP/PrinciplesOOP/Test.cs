@@ -72,7 +72,24 @@ namespace Test
         }
     }
 
-     class Test
+    public class Sequence
+    {
+        // Static field, holding the current sequence value 
+        private static int currentValue = 0;
+
+        // Intentionally deny instantiation of this class 
+        private Sequence()
+        {
+        }
+
+        // Static method for taking the next sequence value 
+        public static int NextValue()
+        {
+            currentValue++;
+            return currentValue;
+        }
+    }
+    class Test
     {
         static public int a;
         static void Main1(string[] args)

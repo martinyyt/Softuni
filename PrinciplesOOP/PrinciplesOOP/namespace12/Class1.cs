@@ -13,6 +13,10 @@ namespace Test
         {
             Cat firstCat = new Cat("xxx","xxx");
             Console.WriteLine(firstCat.Color);
+
+            string string1 = new string('s',5);
+            Console.WriteLine(string1[4]);
+                        
         }
 
         
