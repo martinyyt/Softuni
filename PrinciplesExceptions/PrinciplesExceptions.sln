@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-SomeTests", "PrinciplesExceptions\1-SomeTests.csproj", "{464C9DC2-9CBD-41AA-98D9-832EE067DD42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadNumbers", "ReadNumber\ReadNumbers.csproj", "{CBEEF8F5-2B85-4656-A5E9-5E63061CB141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{464C9DC2-9CBD-41AA-98D9-832EE067DD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{464C9DC2-9CBD-41AA-98D9-832EE067DD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{464C9DC2-9CBD-41AA-98D9-832EE067DD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBEEF8F5-2B85-4656-A5E9-5E63061CB141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBEEF8F5-2B85-4656-A5E9-5E63061CB141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBEEF8F5-2B85-4656-A5E9-5E63061CB141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBEEF8F5-2B85-4656-A5E9-5E63061CB141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,15 +9,20 @@ namespace SomeTests
     class SomeTests
     {
         static void Main(string[] args)
-        {
+        {            
             try
             {
-
+                uint i = uint.Parse(Console.ReadLine());
+                Console.WriteLine(Math.Sqrt(i));
             }
-            catch (Exception)
+            catch (OverflowException e)
+            {                
+                Console.WriteLine("Invalid number");
+            }
+            
+            finally
             {
-
-                throw;
+                Console.WriteLine("bye");
             }
         }
     }

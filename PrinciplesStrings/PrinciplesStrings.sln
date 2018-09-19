@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMethods", "PrinciplesStrings\SimpleMethods.csproj", "{6704214A-E8BB-4D69-9509-CE14AA7AC022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindSubstring", "FindSubstring\FindSubstring.csproj", "{1A39085C-DCAE-43FC-A867-D12AA924901E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6704214A-E8BB-4D69-9509-CE14AA7AC022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6704214A-E8BB-4D69-9509-CE14AA7AC022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6704214A-E8BB-4D69-9509-CE14AA7AC022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6704214A-E8BB-4D69-9509-CE14AA7AC022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A39085C-DCAE-43FC-A867-D12AA924901E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A39085C-DCAE-43FC-A867-D12AA924901E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A39085C-DCAE-43FC-A867-D12AA924901E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A39085C-DCAE-43FC-A867-D12AA924901E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D3D7C48-9D56-4CD0-A429-D8B865254298}
+	EndGlobalSection
+EndGlobal
