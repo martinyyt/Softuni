@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\Merg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsetSumProblem-Why", "PossibleSum\SubsetSumProblem-Why.csproj", "{01401D71-417C-4ADE-A14D-3299668DDD5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnightWalk", "KnightWalk\KnightWalk.csproj", "{EABEB9F3-13A4-46D5-9C66-2627BF103B81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicSquares", "MagicSquares\MagicSquares.csproj", "{671F6B2E-F937-462D-8DF7-C6D2DA7D81B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{01401D71-417C-4ADE-A14D-3299668DDD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01401D71-417C-4ADE-A14D-3299668DDD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01401D71-417C-4ADE-A14D-3299668DDD5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABEB9F3-13A4-46D5-9C66-2627BF103B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABEB9F3-13A4-46D5-9C66-2627BF103B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABEB9F3-13A4-46D5-9C66-2627BF103B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABEB9F3-13A4-46D5-9C66-2627BF103B81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671F6B2E-F937-462D-8DF7-C6D2DA7D81B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671F6B2E-F937-462D-8DF7-C6D2DA7D81B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671F6B2E-F937-462D-8DF7-C6D2DA7D81B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671F6B2E-F937-462D-8DF7-C6D2DA7D81B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

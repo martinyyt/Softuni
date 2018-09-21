@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A39085C-DCAE-43FC-A867-D12AA924901E}</ProjectGuid>
+    <ProjectGuid>{EABEB9F3-13A4-46D5-9C66-2627BF103B81}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FindSubstring</RootNamespace>
-    <AssemblyName>FindSubstring</AssemblyName>
+    <RootNamespace>KnightWalk</RootNamespace>
+    <AssemblyName>KnightWalk</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="KnightWalk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
