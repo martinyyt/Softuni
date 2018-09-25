@@ -215,6 +215,7 @@ namespace SimpleMethods
 
             for (int i = 0; i < count; i++)
             {
+                //Random newRandom = new Random();
                 currentNumber = newRandom.Next(startNumber, endNumber+1);
                 Console.WriteLine(currentNumber);
             }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CBEEF8F5-2B85-4656-A5E9-5E63061CB141}</ProjectGuid>
+    <ProjectGuid>{59626B64-9385-4987-96B3-7A2A2E855630}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ReadNumber</RootNamespace>
-    <AssemblyName>ReadNumber</AssemblyName>
+    <RootNamespace>DateMethods</RootNamespace>
+    <AssemblyName>DaysBetweenDates</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumberNotInRangeException.cs" />
-    <Compile Include="ReadNumbers.cs" />
+    <Compile Include="DateMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

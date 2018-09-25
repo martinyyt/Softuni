@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CBEEF8F5-2B85-4656-A5E9-5E63061CB141}</ProjectGuid>
+    <ProjectGuid>{C36092C5-BB22-4FC1-9B99-D60C652F6349}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ReadNumber</RootNamespace>
-    <AssemblyName>ReadNumber</AssemblyName>
+    <RootNamespace>DifferentWordsInString</RootNamespace>
+    <AssemblyName>DifferentWordsInString</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumberNotInRangeException.cs" />
-    <Compile Include="ReadNumbers.cs" />
+    <Compile Include="DifferentWordsInString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

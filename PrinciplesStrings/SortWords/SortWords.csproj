@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CBEEF8F5-2B85-4656-A5E9-5E63061CB141}</ProjectGuid>
+    <ProjectGuid>{FE9AB948-6C94-40DF-8E00-B0044DB2322F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ReadNumber</RootNamespace>
-    <AssemblyName>ReadNumber</AssemblyName>
+    <RootNamespace>SortWords</RootNamespace>
+    <AssemblyName>SortWords</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumberNotInRangeException.cs" />
-    <Compile Include="ReadNumbers.cs" />
+    <Compile Include="SortWords.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

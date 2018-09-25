@@ -38,14 +38,13 @@ namespace PossibleSum
                 }
                 Console.WriteLine();
             }
-
             return subset[sum, n];
         }
  
         public static void Main()
         {
             
-            int[] set = { 3, 34, 4, 12, 5, 1 };
+            int[] set = { 3, 34, 4, 12, 5, 7 };
             int sum = 14;
             int n = set.Length;
             if (SubsetSum(set, n, sum) == true)

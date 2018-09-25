@@ -33,7 +33,6 @@ class MagicSquares
 
         for (int i = 2; i < 9; i += 2)
         {
-
             magicSq[0][0] = i;                                          //2
             magicSq[2][2] = 15 - 5 - i;                                        //3
 

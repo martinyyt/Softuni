@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReadNumber;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,12 +36,22 @@ namespace ReadNumbers
                 throw e;
             }
 
-            if (numb < start||numb>end)
+            try
             {
-                Exception NumberNotInRange=new Exception("Not in range");
-                throw NumberNotInRange;
+                if (numb < start || numb > end)
+                {
+                    NumberNotInRangeException NumberNotInRange = new NumberNotInRangeException("Not in range");
+                    throw NumberNotInRange;
+                }
             }
-            
+            catch (NumberNotInRangeException)
+            {
+                throw;
+            }
+            catch (FormatException)
+            {
+
+            }            
         }
     }
 }

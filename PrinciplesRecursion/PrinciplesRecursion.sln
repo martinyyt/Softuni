@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnightWalk", "KnightWalk\Kn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicSquares", "MagicSquares\MagicSquares.csproj", "{671F6B2E-F937-462D-8DF7-C6D2DA7D81B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortTests", "MergeSortTests\MergeSortTests.csproj", "{FA112901-2335-41F9-A54B-22802A13FB94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{671F6B2E-F937-462D-8DF7-C6D2DA7D81B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{671F6B2E-F937-462D-8DF7-C6D2DA7D81B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{671F6B2E-F937-462D-8DF7-C6D2DA7D81B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA112901-2335-41F9-A54B-22802A13FB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA112901-2335-41F9-A54B-22802A13FB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA112901-2335-41F9-A54B-22802A13FB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA112901-2335-41F9-A54B-22802A13FB94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,48 +4,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MergeSort
+namespace SortingMethods
 {
-    class MergeSort
+    public class MergeSort
     {
-        static void MergeSortedPartsOfArray(int[] arrToSort, int startIndex, int endIndex, int[] sortedArray) // 0, 2, 4
+        private static void MergeSortedPartsOfArray(int[] toSort, int startIndex, int endIndex, int[] sorted) // 0, 2, 4
         {
             int leftStart = startIndex;
             int rightEnd = endIndex;
             int leftEnd = (rightEnd - leftStart) / 2 + leftStart;
-            int rightStart = leftEnd + 1;            
+            int rightStart = leftEnd + 1;
 
             for (int i = leftStart; i <= rightEnd; i++)
             {
                 if (leftStart <= leftEnd &&
-                    (rightStart > rightEnd || arrToSort[leftStart] <= arrToSort[rightStart])) //important sequence of "OR"
+                    (rightStart > rightEnd || toSort[leftStart] <= toSort[rightStart])) //important sequence of "OR"
                 {
-                    sortedArray[i] = arrToSort[leftStart++];                    
+                    sorted[i] = toSort[leftStart++];
                 }
                 else
                 {
-                    sortedArray[i] = arrToSort[rightStart++];                    
+                    sorted[i] = toSort[rightStart++];
                 }
             }
 
-            for (int i = startIndex; i <=endIndex; i++)
+            for (int i = startIndex; i <= endIndex; i++)
             {
-                arrToSort[i] = sortedArray[i];
+                toSort[i] = sorted[i];
             }
         }
 
-        static void DivideArray(int[] arrToSort, int startIndex, int endIndex)
+        private static void DivideArray(int[] arrToSort, int startIndex, int endIndex)
         {
             int[] sortedArray = new int[arrToSort.Length];
 
             if (endIndex - startIndex > 1)
             {
-                DivideArray(arrToSort, startIndex, (startIndex+endIndex) / 2);
+                DivideArray(arrToSort, startIndex, (startIndex + endIndex) / 2);
                 DivideArray(arrToSort, (startIndex + endIndex) / 2 + 1, endIndex);
             }
 
             MergeSortedPartsOfArray(arrToSort, startIndex, endIndex, sortedArray);
-            
+
+        }
+
+        public static void Sort(int[] arrToSort)
+        {
+            DivideArray(arrToSort, 0, arrToSort.Length - 1);
         }
 
         static void Main(string[] args)
