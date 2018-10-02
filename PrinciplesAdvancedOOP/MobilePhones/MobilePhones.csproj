@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7E2026C9-6B6B-4C88-8264-0A383E3EDC4B}</ProjectGuid>
+    <ProjectGuid>{A8A43371-641B-4E73-BCA6-1750EE967660}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Studen</RootNamespace>
-    <AssemblyName>Studen</AssemblyName>
+    <RootNamespace>MobilePhones</RootNamespace>
+    <AssemblyName>MobilePhones</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Student.cs" />
+    <Compile Include="Battery.cs" />
+    <Compile Include="Call.cs" />
+    <Compile Include="Display.cs" />
+    <Compile Include="GSM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StudentTest.cs" />
+    <Compile Include="TestGSM.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

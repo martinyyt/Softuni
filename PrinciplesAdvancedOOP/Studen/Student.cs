@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Students
 {
-    class Student
+    public class Student
     {
         private string firstName = null;
         private string secondName = null;
@@ -60,16 +60,20 @@ namespace Students
         public string Email { get => email; set => email = value; }
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
 
-        static void Main(string[] args)
-        {
-            Student goshko = new Student();
-            goshko.Course = "aads";
-            goshko.FirstName = "gos";
-            goshko.SecondName = "wtf";
-            goshko.ThirdName = "ade";
-            goshko.PrintStudentInfo();
-        }
+        //static void Main(string[] args)
+        //{
+        //    Student goshko = new Student();
+        //    goshko.Course = "aads";
+        //    goshko.FirstName = "gos";
+        //    goshko.SecondName = "wtf";
+        //    goshko.ThirdName = "ade";
+        //    goshko.PrintStudentInfo();
+        //}
 
+            public static void PrintCountOfStudents()
+        {
+            Console.WriteLine(studentCount);
+        }
         public void PrintStudentInfo()
         {
             Console.WriteLine("Names: "+this.AllNames);
