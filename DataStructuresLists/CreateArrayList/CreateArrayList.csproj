@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EE0F39AC-CECE-4C58-9F23-28B64EDB93C2}</ProjectGuid>
+    <ProjectGuid>{BC4DE8DA-BF80-410D-A1E7-6D90FA8B5F22}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PrintOddLines</RootNamespace>
-    <AssemblyName>PrintOddLines</AssemblyName>
+    <RootNamespace>CreateArrayList</RootNamespace>
+    <AssemblyName>CreateArrayList</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,8 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrintOddLines.cs" />
+    <Compile Include="CreateArrayList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.IO;
+
 
 namespace CountWordOccurrances
 {
@@ -54,20 +56,20 @@ namespace CountWordOccurrances
             }
             return counter;
         }
-        static void CountAllTheWords(Dictionary<string,int> words, string path)
+        static void CountAllTheWords(Dictionary<string, int> words, string path)
         {
-           
+            var wordsList = words.Keys.ToList<string>();
             try
             {
                 StreamReader reader = new StreamReader(path, Encoding.Default);
                 using (reader)
                 {
                     string line = reader.ReadLine();
-                    while (line!=null)
-                    {                        
-                        foreach (var word in words)
+                    while (line != null)
+                    {
+                        foreach (var word in wordsList)
                         {
-                            words[word.Key] = word.Value + CountWordOccurrances(word.Key, line);//exception here!!!
+                            words[word] = words[word] + CountWordOccurrances(word, line);//exception here!!!
                         }
                         line = reader.ReadLine();
                     }
@@ -79,6 +81,26 @@ namespace CountWordOccurrances
                 throw;
             }
         }
+        static void DictToFileDescending(Dictionary<string, int> words, string path)
+        {
+            try
+            {
+                StreamWriter writer = new StreamWriter(path, false, Encoding.UTF8);
+                using (writer)
+                {
+                    foreach (var word in words.OrderByDescending(i=>i.Value))
+                    {
+                        writer.WriteLine(word);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         static void Main(string[] args)
         {
             string inputWords = @"..\..\words.txt";
@@ -86,6 +108,7 @@ namespace CountWordOccurrances
             string output = @"..\..\list.txt";
             Dictionary<string, int> words = FileToDictionaryOfWords(inputWords);
             CountAllTheWords(words, inputText);
+            DictToFileDescending(words, output);
             //Dictionary<string, int> wordsCount = words.ToDictionary(;
 
             //foreach (var word in wordsCount)
@@ -93,12 +116,13 @@ namespace CountWordOccurrances
             //    Console.WriteLine(wordsCount.Values);
             //}
 
-            //Console.WriteLine(CountWordOccurrances("f", "fwtfwsdf wtfwtf"));
 
-            foreach (var word in words)
+            //Console.WriteLine(CountWordOccurrances("f", "fwtfwsdf wtfwtf"));           
+            foreach (var word in words.OrderByDescending(i => i.Value))
             {
                 Console.WriteLine(word);
             }
+            Console.WriteLine("\nFile with the list was created!\n");
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EE0F39AC-CECE-4C58-9F23-28B64EDB93C2}</ProjectGuid>
+    <ProjectGuid>{E8CCC9A9-284F-4BEA-B645-DC0255D1E7E1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PrintOddLines</RootNamespace>
-    <AssemblyName>PrintOddLines</AssemblyName>
+    <RootNamespace>GenerateCustomQueue</RootNamespace>
+    <AssemblyName>GenerateCustomQueue</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,8 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,11 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrintOddLines.cs" />
+    <Compile Include="GenerateCustomQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CountOccurancesPlusStuff\CountOccurancesPlusStuff.csproj">
+      <Project>{9984e693-9a2a-4d3d-a253-6a48e4882edb}</Project>
+      <Name>CountOccurancesPlusStuff</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
