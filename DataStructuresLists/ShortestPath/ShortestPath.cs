@@ -19,22 +19,41 @@ namespace ShortestPath
             linkedNumbers.Add(start, 0);
             while (true)
             {
-                numbers.Enqueue(numbers.Peek() + 1);
-                numbers.Enqueue(numbers.Peek() + 2);
-                numbers.Enqueue(numbers.Peek() * 2);
-
-                if (!linkedNumbers.ContainsKey(numbers.Peek() + 1))
+                if ((numbers.Peek() + 1 <= target) && (!linkedNumbers.ContainsKey(numbers.Peek() + 1)))
                 {
+                    numbers.Enqueue(numbers.Peek() + 1);
                     linkedNumbers.Add(numbers.Peek() + 1, numbers.Peek());
+
                 }
-                if (!linkedNumbers.ContainsKey(numbers.Peek() + 2))
+                if ((numbers.Peek() + 2 <= target) && (!linkedNumbers.ContainsKey(numbers.Peek() + 2)))
                 {
+                    numbers.Enqueue(numbers.Peek() + 2);
                     linkedNumbers.Add(numbers.Peek() + 2, numbers.Peek());
+
                 }
-                if (!linkedNumbers.ContainsKey(numbers.Peek() * 2))
+                if ((numbers.Peek() * 2 <= target) && (!linkedNumbers.ContainsKey(numbers.Peek() * 2)))
                 {
+                    numbers.Enqueue(numbers.Peek() * 2);
                     linkedNumbers.Add(numbers.Peek() * 2, numbers.Peek());
+
                 }
+
+                //numbers.Enqueue(numbers.Peek() + 1);
+                //numbers.Enqueue(numbers.Peek() + 2);
+                //numbers.Enqueue(numbers.Peek() * 2);
+
+                //if (!linkedNumbers.ContainsKey(numbers.Peek() + 1))
+                //{
+                //    linkedNumbers.Add(numbers.Peek() + 1, numbers.Peek());
+                //}
+                //if (!linkedNumbers.ContainsKey(numbers.Peek() + 2))
+                //{
+                //    linkedNumbers.Add(numbers.Peek() + 2, numbers.Peek());
+                //}
+                //if (!linkedNumbers.ContainsKey(numbers.Peek() * 2))
+                //{
+                //    linkedNumbers.Add(numbers.Peek() * 2, numbers.Peek());
+                //}
                 if (linkedNumbers.ContainsKey(target))
                 {
                     break;
@@ -45,10 +64,10 @@ namespace ShortestPath
             }
             return linkedNumbers;
         }
-        static void ReturnPath (Dictionary<int,int> linkedNumbers,int lastNumber)
+        static void ReturnPath(Dictionary<int, int> linkedNumbers, int lastNumber)
         {
             int currentKey = lastNumber;
-            while (currentKey!=0)
+            while (currentKey != 0)
             {
                 Console.WriteLine(currentKey);
                 currentKey = linkedNumbers[currentKey];
@@ -57,7 +76,7 @@ namespace ShortestPath
         static void Main(string[] args)
         {
             int startNumb = 5;
-            int endNumb = 50000;
+            int endNumb = 3685754;
 
             Dictionary<int, int> linkedNumbers = GenerateLinkedSteps(startNumb, endNumb);
             //foreach (var item in linkedNumbers)
