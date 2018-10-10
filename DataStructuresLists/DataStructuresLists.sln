@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCustomQueue", "Gene
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPath", "ShortestPath\ShortestPath.csproj", "{D214CD8F-D588-48D4-9888-2656775EBD10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortLinkedList", "SortLinkedList\SortLinkedList.csproj", "{A120BDCC-705A-4222-954B-F098854D8EF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortByOccuranceThenByValue", "SortByOccuranceThenByValue\SortByOccuranceThenByValue.csproj", "{41741722-0E88-4C26-9312-19ACE77B0649}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{D214CD8F-D588-48D4-9888-2656775EBD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D214CD8F-D588-48D4-9888-2656775EBD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D214CD8F-D588-48D4-9888-2656775EBD10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A120BDCC-705A-4222-954B-F098854D8EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A120BDCC-705A-4222-954B-F098854D8EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A120BDCC-705A-4222-954B-F098854D8EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A120BDCC-705A-4222-954B-F098854D8EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41741722-0E88-4C26-9312-19ACE77B0649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41741722-0E88-4C26-9312-19ACE77B0649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41741722-0E88-4C26-9312-19ACE77B0649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41741722-0E88-4C26-9312-19ACE77B0649}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
