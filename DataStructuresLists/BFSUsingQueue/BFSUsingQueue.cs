@@ -26,8 +26,7 @@ namespace BFSUsingQueue
                     foreach (var dir in children)
                     {
                         visited.Enqueue(dir);
-                    }
-
+                    }                    
                 }
             }
             catch (System.UnauthorizedAccessException)

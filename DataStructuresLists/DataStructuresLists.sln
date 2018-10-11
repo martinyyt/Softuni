@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortByOccuranceThenByValue"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFSUsingQueue", "BFSUsingQueue\BFSUsingQueue.csproj", "{D2849A53-E69A-4D86-99FD-BBFDD80C9676}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFSUsingStack", "DFSUsingQueue\DFSUsingStack.csproj", "{4207033B-84B0-4891-873C-68EF4A6FB3F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabyrinthPahsWithBFS", "LabyrinthPahsWithBFS\LabyrinthPahsWithBFS.csproj", "{BD7DBDCE-7FF3-495F-9AC3-01D58AF6446A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{D2849A53-E69A-4D86-99FD-BBFDD80C9676}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2849A53-E69A-4D86-99FD-BBFDD80C9676}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2849A53-E69A-4D86-99FD-BBFDD80C9676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4207033B-84B0-4891-873C-68EF4A6FB3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4207033B-84B0-4891-873C-68EF4A6FB3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4207033B-84B0-4891-873C-68EF4A6FB3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4207033B-84B0-4891-873C-68EF4A6FB3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD7DBDCE-7FF3-495F-9AC3-01D58AF6446A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7DBDCE-7FF3-495F-9AC3-01D58AF6446A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7DBDCE-7FF3-495F-9AC3-01D58AF6446A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7DBDCE-7FF3-495F-9AC3-01D58AF6446A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
