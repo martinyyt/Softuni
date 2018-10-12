@@ -36,7 +36,7 @@ namespace BinaryTreeStructure
         /// <summary> The right child of the current node </summary> 
         public BinaryTree<T> RightChild { get; private set; }
 
-        /// <summary> Traverses binary tree in in-order </summary> 
+        /// <summary> Traverses binary tree in in-order; left-root-right </summary> 
         public void PrintInOrder()
         {
             /// 1. Visit the left child 
@@ -54,8 +54,8 @@ namespace BinaryTreeStructure
                 this.RightChild.PrintInOrder();
             }
         }
-        /// <summary> Traverses binary tree in pre-order </summary>
-        public void PrintPreOrder() // To do by myself!!! / 1. visit root / 2. visit left child / 3. visit right child - not working yet
+        /// <summary> Traverses binary tree in pre-order; root-left-right </summary>
+        public void PrintPreOrder() // To do by myself!!! / 1. visit root / 2. visit left child / 3. visit right child
         {
             //visit root
             Console.Write(this.Value + " ");
@@ -70,8 +70,8 @@ namespace BinaryTreeStructure
                 this.RightChild.PrintPreOrder();
             }
         }
-        /// <summary> Traverses binary tree in post-order </summary>
-        public void PrintPostOrder() // To do by myself!!! / 1. visit left child / 2. visit right child / 3. visit root - not working yet
+        /// <summary> Traverses binary tree in post-order;left-right-root </summary>
+        public void PrintPostOrder() // To do by myself!!! / 1. visit left child / 2. visit right child / 3. visit root
         {
             // visit left child
             if (this.LeftChild != null)
