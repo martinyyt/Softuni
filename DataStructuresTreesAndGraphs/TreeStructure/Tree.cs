@@ -50,7 +50,7 @@ namespace TreeStructure
             {
                 return;
             }
-
+            
             Console.WriteLine(spaces + root.Value);
 
             TreeNode<T> child = null;
@@ -61,7 +61,35 @@ namespace TreeStructure
             }
         }
 
-        /// <summary> Traverses & prints the tree in Depth First Search (DFS) order </summary> 
+        /// <summary> Traverses and prints tree in Depth First Search (DFS) order </summary> 
         public void PrintDFS() => this.PrintDFS(this.root, string.Empty);
+                
+        /// <summary> Traverses and finds the occurances of TreeNode value </summary> 
+        public int CountOccurances(TreeNode<T> obj) // is this OK???
+        {
+            if (this.root == null)
+            {
+                return 0;
+            }
+
+            int counter = 0;
+
+            TreeNode<T> child = this.root;
+            Stack<TreeNode<T>> children = new Stack<TreeNode<T>>();
+            children.Push(child);
+            while (children.Count > 0)
+            {
+                child = children.Pop();
+                if (child.Value.Equals(obj.Value))
+                {
+                    counter++;
+                }
+                for (int i = 0; i < child.ChildrenCount; i++)
+                {
+                    children.Push(child.GetChild(i));
+                }
+            }
+            return counter;
+        }
     }
 }
