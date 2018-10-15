@@ -33,7 +33,7 @@ namespace FoldersAndFilesTree
 
         public static void Main()
         {
-            Folder root = new Folder(@"..\..");
+            Folder root = new Folder(@"..\..\..");
             //GetSubfoldersAndFiles(root); // this goes into the constructor of class Folder!!!
 
             root.ChildFolders[2].PrintFilesAndFolders();
@@ -45,7 +45,8 @@ namespace FoldersAndFilesTree
             Console.WriteLine(root.ChildFolders[2].Name + "\\" + root.ChildFolders[2].Files[0].Name);
             Console.WriteLine();
 
-
+            Console.WriteLine("Total filesize in {0} is: {1}", root.Name, root.GetTotalSizeOfFiles());
+            Console.WriteLine();
         }
     }
 }

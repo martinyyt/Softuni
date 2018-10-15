@@ -31,8 +31,8 @@ namespace FoldersAndFilesTree
 
 
         public string Name { get => name; set => name = value; }
-        internal File[] Files { get => files; set => files = value; }
-        internal Folder[] ChildFolders { get => childFolders; set => childFolders = value; }
+        public File[] Files { get => files; set => files = value; }
+        public Folder[] ChildFolders { get => childFolders; set => childFolders = value; }
 
         private void GetSubfoldersAndFiles()
         {
@@ -72,6 +72,26 @@ namespace FoldersAndFilesTree
                     folders.Push(child);
                 }
             }
+        }
+        public long GetTotalSizeOfFiles()
+        {
+            long totalSize = 0;
+            Stack<Folder> folders = new Stack<Folder>();
+            folders.Push(this);
+            Folder currentFolder = null;
+            while (folders.Count > 0)
+            {
+                currentFolder = folders.Pop();                
+                foreach (var file in currentFolder.Files)
+                {
+                    totalSize+=file.Size;
+                }
+                foreach (var child in currentFolder.ChildFolders)
+                {
+                    folders.Push(child);
+                }
+            }
+            return totalSize;
         }
     }
 }
