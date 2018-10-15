@@ -10,7 +10,7 @@ namespace TreeStructure
     {
         static void Main()
         {
-            // Create the tree
+            // Create the tree            
             Tree<int> tree =
               new Tree<int>(7,
                 new Tree<int>(19,
