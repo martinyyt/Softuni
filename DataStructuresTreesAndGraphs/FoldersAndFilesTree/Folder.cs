@@ -22,8 +22,8 @@ namespace FoldersAndFilesTree
         }
         public Folder(string name)
         {
-            this.name = name;
-            //this.name = new DirectoryInfo(name).FullName;
+            //this.name = name;
+            this.name = new DirectoryInfo(name).FullName; // to be sure to get the fullname of the folder if given relative path!!!
             this.childFolders = null;
             this.files = null;
             this.GetSubfoldersAndFiles();
