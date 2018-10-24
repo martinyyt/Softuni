@@ -20,14 +20,13 @@ namespace InsertionSort
         static void Main(string[] args)
         {
             int[] arrayToSort = { 5, 21, 5, 0, 7, 6, 8, 21, 99, 0, 5, 2, 7, 33 };
-            int temp;
 
             for (int i = 0; i < arrayToSort.Length; i++)
             {
                 int index = i;
-                while (index>0&&arrayToSort[index]<arrayToSort[index-1])
+                while (index > 0 && arrayToSort[index] < arrayToSort[index - 1])
                 {
-                    temp = arrayToSort[index];
+                    int temp = arrayToSort[index];
                     arrayToSort[index] = arrayToSort[index - 1];
                     arrayToSort[index - 1] = temp;
                     index--;
@@ -36,8 +35,8 @@ namespace InsertionSort
             //DisplayArray1(arrayToSort);
 
             _1_Methods.Methods.DisplayArray(arrayToSort);
-            
-            
+
+
             //for (int i = 0; i < arrayToSort.Length; i++)
             //{
             //    Console.Write(arrayToSort[i] + " ");
