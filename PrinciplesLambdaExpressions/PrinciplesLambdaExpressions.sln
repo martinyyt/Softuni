@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderByThenByExample", "OrderByThenByExample\OrderByThenByExample.csproj", "{A81917D4-7BA4-43C1-B53F-D8224E1F9BCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divisibility", "Divisibility\Divisibility.csproj", "{7E0052EB-E6A9-4E18-B761-FFD684DB95DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A81917D4-7BA4-43C1-B53F-D8224E1F9BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81917D4-7BA4-43C1-B53F-D8224E1F9BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81917D4-7BA4-43C1-B53F-D8224E1F9BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81917D4-7BA4-43C1-B53F-D8224E1F9BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0052EB-E6A9-4E18-B761-FFD684DB95DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0052EB-E6A9-4E18-B761-FFD684DB95DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0052EB-E6A9-4E18-B761-FFD684DB95DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0052EB-E6A9-4E18-B761-FFD684DB95DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {051CC22E-A7A7-4C86-8061-01DA38C6C9E1}
+	EndGlobalSection
+EndGlobal

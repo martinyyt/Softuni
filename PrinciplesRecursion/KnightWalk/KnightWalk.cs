@@ -20,6 +20,9 @@ namespace KnightWalk
                 }
             }
 
+            Point2D startPoint = new Point2D(0, 0, 1);
+            FillMatrix(board, startPoint);
+
             for (int i = 0; i < board.GetLength(0); i++)
             {
                 for (int j = 0; j < board.GetLength(1); j++)
@@ -30,26 +33,72 @@ namespace KnightWalk
             }
 
         }
-        static int[,] stepVariations = { { 1, 2 }, { 1, -2 }, { -1, 2 }, { -1, -2 }, { 2, 1 }, { 2, -1 }, { -2, 1 }, { -2, -1 } };
-        static int counter = 0;
 
-        static void NextStep(int[,] board, int startX, int startY)
+        static Point2D[] stepVariations = { new Point2D ( 1, 2, 1 ), new Point2D ( 1, -2, 1 ),
+            new Point2D ( -1, 2, 1), new Point2D ( -1, -2, 1 ),
+            new Point2D ( 2, 1, 1 ), new Point2D ( 2, -1, 1 ),
+            new Point2D ( -2, 1, 1 ), new Point2D ( -2, -1, 1 ) };
+
+        static bool HaveNextCell(int[,] board, Point2D currentPoint)
         {
-            if (counter == 64)
+            bool result = false;
+            foreach (var step in stepVariations)
             {
-                return;
-            }
-            for (int i = 0; i < 8; i++)
-            {
-                if (!(startX + stepVariations[i, 0] < 8 && startX + stepVariations[i, 0] > -1 &&
-                    startY + stepVariations[i, 1] < 8 && startY + stepVariations[i, 1] > -1))
+                Point2D nextPoint = new Point2D(step.X + currentPoint.X, step.Y + currentPoint.Y, currentPoint.Value + step.Value);
+                if (!(nextPoint.X < 0 || nextPoint.X > 7 || nextPoint.Y < 0 || nextPoint.Y > 7 || nextPoint.Value > 64))
                 {
+                    if (board[nextPoint.X, nextPoint.Y] == -1)
+                    {
+                        result = true;
+                    }
+                }
+            }
+            return result;
+        }
+
+        static void FillMatrix(int[,] board, Point2D startPoint)
+        {
+            Point2D currentPoint = new Point2D(startPoint.X, startPoint.Y, startPoint.Value);
+            Point2D previousPoint = new Point2D(currentPoint.X, currentPoint.Y, currentPoint.Value - 1);//???
+            Stack<Point2D> stepsStack = new Stack<Point2D>();
+            stepsStack.Push(currentPoint);
+            //board[currentPoint.X, currentPoint.Y] = currentPoint.Value;
+
+            //foreach (var step in stepVariations)
+            //{
+            //    Point2D nextPoint = new Point2D(step.X + currentPoint.X, step.Y + currentPoint.Y, currentPoint.Value + step.Value);
+            //    if (!(nextPoint.X < 0 || nextPoint.X > 7 || nextPoint.Y < 0 || nextPoint.Y > 7 || nextPoint.Value > 64))
+            //    {
+            //        stepsStack.Push(nextPoint);
+            //    }
+            //}
+            
+            while (currentPoint.Value <= 64 && stepsStack.Count > 0)
+            {
+                
+                currentPoint = stepsStack.Pop();
+                if (!HaveNextCell(board, currentPoint) && currentPoint.Value != 64)
+                {
+                    board[currentPoint.X, currentPoint.Y] = -1;                    
                     continue;
                 }
-                counter++;
-                board[startX, startY] = counter;
-                NextStep(board, startX + stepVariations[i, 0], startY + stepVariations[i, 1]);
-
+                else if (currentPoint.Value == 64)
+                {
+                    board[currentPoint.X, currentPoint.Y] = currentPoint.Value;
+                    break;
+                }
+                if (board[currentPoint.X, currentPoint.Y] == -1)
+                {
+                    board[currentPoint.X, currentPoint.Y] = currentPoint.Value;
+                    foreach (var step in stepVariations)
+                    {
+                        Point2D nextPoint = new Point2D(step.X + currentPoint.X, step.Y + currentPoint.Y, currentPoint.Value + step.Value);
+                        if (nextPoint.X > -1 && nextPoint.X < 8 && nextPoint.Y > -1 && nextPoint.Y < 8)
+                        {
+                            stepsStack.Push(nextPoint);
+                        }
+                    }
+                }
             }
         }
     }
