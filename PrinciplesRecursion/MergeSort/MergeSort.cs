@@ -58,8 +58,7 @@ namespace SortingMethods
             int[] arr = { 7, 1, 5, 3, 2, 0, 11, 15, 18, 32, -5, 99, -6, 1 };
             //int[] result = new int[arr.Length];
             //MergeSortedPartsOfArray(arr, 1, 3, result);  // 0, (length-1)/2, length-1 // startIndex, (endIndex-startIndex)/2+startIndex, endIndex
-            int lastIndex = arr.Length - 1;
-            DivideArray(arr, 0, lastIndex);
+            Sort(arr);
             //Console.WriteLine(string.Join("; ",result));
             Console.WriteLine(string.Join("; ", arr));
         }
